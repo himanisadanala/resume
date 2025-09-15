@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color:pink;
+            color:blue;
+        }
+        .page-section.hidden {
+            display: none;
+        }
+        /* Custom styles for the responsive photo placeholder */
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            background-color:beige;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 0.8rem;
+            border-radius: 9999px; /* This makes it a perfect circle */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Hide anything that goes outside the circle */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white shadow-md rounded-b-xl sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 md:mb-0">
+                <a href="#" class="rounded-lg p-2 transition-colors hover:text-indigo-600">Sadanala Himani</a>
+            </h1>
+            <nav class="flex space-x-2 md:space-x-6 text-sm md:text-lg font-medium">
+                <a href="#" class="nav-link px-3 py-2 rounded-lg transition-all hover:bg-indigo-50 hover:text-indigo-600" data-page="home">Home</a>
+                <a href="#" class="nav-link px-3 py-2 rounded-lg transition-all hover:bg-indigo-50 hover:text-indigo-600" data-page="resume">Resume</a>
+                <a href="#" class="nav-link px-3 py-2 rounded-lg transition-all hover:bg-indigo-50 hover:text-indigo-600" data-page="contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+
+        <!-- Home Page Section -->
+        <section id="home-page" class="page-section p-8 md:p-12 bg-white rounded-3xl shadow-xl flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-12">
+            <div class="photo-placeholder flex-shrink-0 mb-6 md:mb-0">
+            </div>
+            <div class="text-center md:text-left flex-grow">
+                <h2 class="text-4xl font-bold mb-4 text-gray-900">
+                    Welcome to Sadanala Himani's Resume
+                </h2>
+                <p class="text-gray-600 text-lg mb-6">
+                    "The future belongs to those who learn more skills and combine them in creative ways."
+                </p>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    A passionate and dedicated to work as a software employee with a strong background in coding. I thrive on solving complex problems and am always eager to learn new technologies. This site showcases my professional journey, skills, and projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Resume Page Section (initially hidden) -->
+        <section id="resume-page" class="page-section hidden p-8 md:p-12 bg-white rounded-3xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-8 text-center text-gray-900">My Resume</h2>
+
+            <!-- Personal Information -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Personal Information</h3>
+                <p><strong>Name:</strong>Sadanala Himani</p>
+                <p><strong>Address:</strong>23-74,Badepuram,Tadikonda,Guntur,AndhraPradesh 522236</p>
+                <p><strong>Email:</strong>himanisadanala@gmail.com</p>
+                <p><strong>Phone:</strong>8310352865</p>
+            </div>
+
+            <!-- Education -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Education</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li><strong>Computer Science</strong> -VTU University, 2023-27</li>
+                    <li><strong>BE</strong> -Gopalan Collage of Engineering and Management,2023-27</li>
+                </ul>
+            </div>
+
+            <!-- Skills -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Skills</h3>
+                <div class="flex flex-wrap gap-4">
+                    <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">Programming languages:Python,Java,C</span>
+                    <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">Data Base Management:MySQL,SQL Queries</span>
+                    <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">Tools:Eclipse,VS code</span>
+                    <span class="bg-gray-200 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">Other skills:Communication,Problem-Solving</span>
+                </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Work Experience</h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-900">Internal Hackatons in GCEM</h4>
+                        <p class="text-sm text-gray-500">2023-25</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                            <li>SIH in 2024</li>
+                            <li>SIH in 2025</li>
+							<li>Dataton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Projects</h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-900">Smart Street Light</h4>
+                        <p class="text-gray-700 mt-1">It majorly focuses on power saving.
+                            It is basically about the pover saving.it is a small prototype which we build.The idea is when ever we are travelling on roads at mid night we usually see the street lights which wer turned on 100% in that case so much of current is being used.
+                            So we thought why not we can reduce the use age of current in this case.So we thought when ever the vehicles are not going on the roads then there will be 5% of light turned on when the vehicle comes then the sensors will detect the vehicle and 
+                            increase the light intensity to 100%.
+                        </p><h4 class="text-lg font-bold text-gray-900">Automatic Question Paper Generator</h4>
+                        <p class="text-gray-700 mt-1">Currently we are working on this.Our idea is to take the question bank and the proto type of the question  paper from the user and then according to the marks allotted the questions from the question bank have to be taken.
+                            It should also collect the teacher signature,hod signature and principle signature from the user.This is most help full for the collages and also reduces the burden to the teachers.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page Section (initially hidden) -->
+        <section id="contact-page" class="page-section hidden p-8 md:p-12 bg-white rounded-3xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-8 text-center text-gray-900">Contact Me</h2>
+            <form id="contact-form" class="max-w-xl mx-auto space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Your Name" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="your.email@example.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                    <input type="text" id="subject" name="subject" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Subject of your message" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Your message here..." required></textarea>
+                </div>
+                <div id="form-message" class="text-center text-sm font-semibold"></div>
+                <div class="text-center">
+                    <button type="submit" class="w-full md:w-auto px-6 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors transform hover:scale-105">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-inner rounded-t-xl mt-12 py-8 text-center text-gray-600">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+            const form = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            // Function to handle page navigation
+            function navigate(pageId) {
+                pageSections.forEach(section => {
+                    if (section.id === pageId) {
+                        section.classList.remove('hidden');
+                    } else {
+                        section.classList.add('hidden');
+                    }
+                });
+            }
+
+            // Add click listeners to navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = link.getAttribute('data-page') + '-page';
+                    navigate(pageId);
+                });
+            });
+
+            // Form validation
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                // Simple validation checks
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const subject = document.getElementById('subject').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (!name || !email || !subject || !message) {
+                    formMessage.textContent = 'Please fill out all fields.';
+                    formMessage.className = 'text-center text-sm font-semibold text-red-600';
+                    return;
+                }
+
+                // Basic email validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    formMessage.textContent = 'Please enter a valid email address.';
+                    formMessage.className = 'text-center text-sm font-semibold text-red-600';
+                    return;
+                }
+
+                // If validation passes
+                formMessage.textContent = 'Thank you for your message! It has been submitted successfully.';
+                formMessage.className = 'text-center text-sm font-semibold text-green-600';
+                form.reset(); // Clear the form fields
+            });
+        });
+    </script>
+</body>
+</html>

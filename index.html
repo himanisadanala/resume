@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Personal Website</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
@@ -35,7 +34,6 @@
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- Header and Navigation -->
     <header class="bg-white shadow-md rounded-b-xl sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 md:py-6 flex flex-col md:flex-row justify-between items-center">
             <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 md:mb-0">
@@ -49,12 +47,11 @@
         </div>
     </header>
 
-    <!-- Main Content Sections -->
     <main class="flex-grow container mx-auto px-4 py-8">
 
-        <!-- Home Page Section -->
         <section id="home-page" class="page-section p-8 md:p-12 bg-white rounded-3xl shadow-xl flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-12">
             <div class="photo-placeholder flex-shrink-0 mb-6 md:mb-0">
+                <img src="https://placehold.co/150x150/805ad5/ffffff/png?text=Your+Photo" alt="Sadanala Himani Profile Photo" class="w-full h-full object-cover">
             </div>
             <div class="text-center md:text-left flex-grow">
                 <h2 class="text-4xl font-bold mb-4 text-gray-900">
@@ -69,11 +66,9 @@
             </div>
         </section>
 
-        <!-- Resume Page Section (initially hidden) -->
         <section id="resume-page" class="page-section hidden p-8 md:p-12 bg-white rounded-3xl shadow-xl">
             <h2 class="text-4xl font-bold mb-8 text-center text-gray-900">My Resume</h2>
 
-            <!-- Personal Information -->
             <div class="mb-8">
                 <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Personal Information</h3>
                 <p><strong>Name:</strong>Sadanala Himani</p>
@@ -82,7 +77,6 @@
                 <p><strong>Phone:</strong>8310352865</p>
             </div>
 
-            <!-- Education -->
             <div class="mb-8">
                 <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Education</h3>
                 <ul class="list-disc list-inside space-y-2 text-gray-700">
@@ -91,7 +85,6 @@
                 </ul>
             </div>
 
-            <!-- Skills -->
             <div class="mb-8">
                 <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Skills</h3>
                 <div class="flex flex-wrap gap-4">
@@ -102,7 +95,6 @@
                 </div>
             </div>
 
-            <!-- Work Experience -->
             <div class="mb-8">
                 <h3 class="text-2xl font-semibold text-indigo-600 mb-2 border-b-2 border-indigo-200 pb-1">Work Experience</h3>
                 <div class="space-y-4">
@@ -134,7 +126,6 @@
             </div>
         </section>
 
-        <!-- Contact Page Section (initially hidden) -->
         <section id="contact-page" class="page-section hidden p-8 md:p-12 bg-white rounded-3xl shadow-xl">
             <h2 class="text-4xl font-bold mb-8 text-center text-gray-900">Contact Me</h2>
             <form id="contact-form" class="max-w-xl mx-auto space-y-6">
@@ -165,7 +156,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer class="bg-white shadow-inner rounded-t-xl mt-12 py-8 text-center text-gray-600">
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
